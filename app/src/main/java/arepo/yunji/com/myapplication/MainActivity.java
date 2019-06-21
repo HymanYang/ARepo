@@ -10,6 +10,12 @@ import android.widget.TextView;
 
 import arepo.yunji.com.common.RepoLibUtils;
 
+
+/**
+ * 测试Activity
+ *
+ * @author zz
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
