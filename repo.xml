@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+
+    <project origin="https://github.com/HymanYang/ARepo.git" branch="master">
+
+        <include name="ARepoLib" />
+
+    </project>
+
+
+    <module name="ARepoLib" origin="https://github.com/HymanYang/ARepoLib.git" />
+
+</manifest>

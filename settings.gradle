@@ -1,1 +1,13 @@
+//apply plugin: 'gradle-repo-settings'
+//buildscript {
+//    repositories {
+//        jcenter()
+//    }
+//    dependencies {
+//        classpath 'com.eastwood.tools.plugins:gradle-repo:1.0.2'
+//    }
+//}
+
 include ':app'
+include ':common'
+project(':common').projectDir = new File("ARepoLib/common")
