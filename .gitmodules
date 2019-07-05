@@ -1,3 +1,4 @@
 [submodule "ARepoLib"]
 	path = ARepoLib
 	url = https://github.com/HymanYang/ARepoLib.git
+	branch = dev
