@@ -28,3 +28,51 @@ dependencies {
 
     implementation project(':common')
 }
+
+
+project.afterEvaluate {
+
+    println "=============afterEvaluate======"
+
+    def branch = getGitBranch()
+    println "Main__branch_" + branch
+    def branchV2 = getSubmoduleBranch()
+    println "submodule__branch_" + branchV2
+
+
+    if (branchV2.equals("master") && branch.equals(branchV2)) {
+
+        println "============== master"
+
+    } else {
+
+        println "============== master error"
+
+        throw new RuntimeException("git branch is error")
+    }
+
+
+}
+
+
+/**
+ * 获取Git 分支名
+ */
+def getGitBranch() {
+    return 'git symbolic-ref --short -q HEAD'.execute().text.trim()
+}
+
+
+/**
+ * 获取子Git分支名
+ */
+def getSubmoduleBranch() {
+
+    def value = new ByteArrayOutputStream()
+    exec {
+        workingDir("../ARepoLib")
+        commandLine "sh", "-c", "git symbolic-ref --short -q HEAD"
+        standardOutput = value
+    }
+    return value.toString().trim()
+}
