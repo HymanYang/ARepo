@@ -9,7 +9,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.yj.ping.test.P_T01;
+
 import arepo.yunji.com.common.RepoLibUtils;
+import rylife.yunji.com.pingall.PMainLib;
 
 
 /**
@@ -41,6 +44,15 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.txt);
         textView.setText("Value:" + RepoLibUtils.getLibStr());
 
+
+        testPingLib();
+    }
+
+    private void testPingLib() {
+
+        Class pName = P_T01.class;
+
+        String from = PMainLib.isFrom();
 
     }
 
