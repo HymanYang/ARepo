@@ -1,7 +1,5 @@
 package rylife.yunji.com.pingall;
 
-import com.yj.ping.test.P_T01;
-
 /**
  * @Description:
  * @Author: yangZhou
@@ -18,6 +16,6 @@ public class PMainLib {
 
 
     public static void M2P01() {
-        P_T01.testP01();
+       // P_T01.testP01();
     }
 }

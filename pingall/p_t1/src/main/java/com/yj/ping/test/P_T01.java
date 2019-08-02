@@ -1,5 +1,6 @@
 package com.yj.ping.test;
 
+
 /**
  * @Description:
  * @Author: yangZhou
@@ -12,6 +13,9 @@ public class P_T01 {
 
     public static void testP01() {
         System.out.println("这是P_01的一个类；");
+
+
+        //int id = R.string.c_str;
     }
 
 }

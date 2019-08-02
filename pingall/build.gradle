@@ -25,7 +25,7 @@ android {
 }
 
 microModule {
-    codeCheckEnabled true
+    codeCheckEnabled false
 
     include ':p_t1'
 

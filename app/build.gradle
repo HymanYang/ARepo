@@ -35,21 +35,14 @@ dependencies {
 project.afterEvaluate {
 
     println "=============afterEvaluate======"
-
     def branch = getGitBranch()
     println "Main__branch_" + branch
     def branchV2 = getSubmoduleBranch()
     println "submodule__branch_" + branchV2
 
-
     if (branchV2.equals("master") && branch.equals(branchV2)) {
-
         println "============== master"
-
     } else {
-
-        println "============== master error"
-
         throw new RuntimeException("git branch is error")
     }
 
